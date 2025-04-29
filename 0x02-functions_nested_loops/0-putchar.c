@@ -1,10 +1,23 @@
-#include <stdio.h>
+#include "main.h"
 
-const char* _putchar(){
-	return "_putchar";
+/**
+ * main - Entry point
+ *
+ * Description: prints "_putchar" followed by a new line
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+    char text[] = "_putchar";
+    int i;
+
+    for (i = 0; text[i] != '\0'; i++)
+    {
+        _putchar(text[i]);
+    }
+    _putchar('\n');
+
+    return (0);
 }
 
-int main(){
-
-	printf("%s\n", _putchar());
-}
